@@ -1,0 +1,272 @@
+$primary-color: #646cff;
+$green-color: #2ecc71;
+$white-color: #fff;
+
+body {
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 639px) {
+  .lightbox_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 375px;
+  }
+
+  .lightbox_container_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .lightbox_container.fade-out {
+    animation: fade-out 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .lightbox_container_content_header {
+    position: absolute;
+    width: 5em;
+    top: 30%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+
+  .lightbox_container_content_header_img {
+    width: 180px;
+  }
+
+  .lightbox_container_content {
+    position: absolute;
+    width: 46%;
+    height: auto;
+    top: 67%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+  }
+  .lightbox_container_content_sucess {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    font-size: 0.6em;
+    top: 65%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    color: $white-color;
+  }
+
+  .lightbox_container_content_sucess_title {
+    font-size: 2em;
+  }
+  .lightbox_container_content_title {
+    color: $white-color;
+    margin-bottom: 0.6em;
+    font-size: 0.8em;
+  }
+  .lightbox_container_content_sucess {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 61%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    color: $white-color;
+  }
+  .lightbox_container_content_sucess_cupom {
+    position: absolute;
+    left: 3%;
+    top: 3em;
+    border: 2px dashed $white-color;
+    padding: 0.6em;
+    border-radius: 0.3em;
+    background-color: transparent;
+    color: $white-color;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+  }
+  .lightbox_container_content_sucess_cupom:hover {
+    border: 2px dashed $primary-color;
+
+    cursor: pointer;
+  }
+  .lightbox_container_content_title {
+    color: $white-color;
+    margin-bottom: 0.6em;
+  }
+  .lightbox_container_content_button_send {
+    text-transform: uppercase;
+    border-radius: 1em;
+    border: 1px solid transparent;
+    padding: 0.2em;
+    font-size: 0.8em;
+    font-family: inherit;
+    background-color: $green-color;
+    color: $white-color;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    text-align: right;
+  }
+
+  .lightbox_container_content_button_input {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 1.5em;
+    border: none;
+  }
+
+  .lightbox_container_button_closed {
+    position: absolute;
+    left: 80%;
+    top: 14%;
+    color: $white-color;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+  .lightbox_container_content_button_send:hover {
+    border-color: #646cff;
+  }
+
+  .lightbox_container_content_button_send:focus,
+  .lightbox_container_content_button_send:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+@media (min-width: 640px) {
+  .lightbox_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 600px;
+  }
+
+  .lightbox_container_button_closed {
+    position: absolute;
+    left: 80%;
+    top: 14%;
+    color: $white-color;
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+
+  .lightbox_container_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .lightbox_container.fade-out {
+    animation: fade-out 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .lightbox_container_content_header {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top: 30%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+  .lightbox_container_content {
+    position: absolute;
+    width: 46%;
+    height: auto;
+    top: 67%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+  }
+  .lightbox_container_content_sucess {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 61%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    color: $white-color;
+  }
+  .lightbox_container_content_sucess_cupom {
+    position: absolute;
+    left: 13%;
+    top: 4em;
+    border: 2px dashed $white-color;
+    padding: 1em;
+    border-radius: 0.3em;
+    background-color: transparent;
+    color: $white-color;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+  }
+  .lightbox_container_content_sucess_cupom:hover {
+    border: 2px dashed $primary-color;
+
+    cursor: pointer;
+  }
+  .lightbox_container_content_title {
+    color: $white-color;
+    margin-bottom: 0.6em;
+  }
+  .lightbox_container_content_sucess_title {
+    font-size: 2em;
+    font-weight: 100;
+  }
+
+  .lightbox_container_content_button_send {
+    text-transform: uppercase;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    padding: 0.3em;
+    font-size: 1em;
+    font-family: inherit;
+    background-color: $green-color;
+    color: $white-color;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    text-align: right;
+  }
+
+  .lightbox_container_content_button_input {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 2em;
+    border: none;
+  }
+
+  .lightbox_container_content_button_send:hover {
+    border-color: #646cff;
+  }
+
+  .lightbox_container_content_button_send:focus,
+  .lightbox_container_content_button_send:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
