@@ -14,6 +14,12 @@ Lib: ReactJS
 Styles: SASS
 Icons: ReactIcon
 ____________________________________
+# Startar Projeto
+
+1. pnpm i  || npm i
+2. pnpm run dev || npm run dev
+
+
 
 
 
