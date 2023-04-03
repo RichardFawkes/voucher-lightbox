@@ -5,7 +5,7 @@ Abre e fechar modal usando estados padroes do react.
 ___________________________________________________
 #Feature Adicionais:
 
-1. Copia texto do voucher clickando 
+1. Copia texto do voucher clicando 
 ___________________________________
 #Tecnologias
 
