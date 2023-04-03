@@ -16,8 +16,8 @@ Icons: ReactIcon
 ____________________________________
 # Startar Projeto
 
-1. pnpm i  || npm i
-2. pnpm run dev || npm run dev
+1. pnpm i  OU npm i
+2. pnpm run dev OU npm run dev
 
 
 
