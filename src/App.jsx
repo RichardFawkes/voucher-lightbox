@@ -88,7 +88,10 @@ function App() {
                 <label>Cadastre-se e receba agora mesmo!</label>
               </div>
 
-              <form onSubmit={handleSubmit}>
+              <form
+                onSubmit={handleSubmit}
+                className="lightbox_container_content_form"
+              >
                 <input
                   className="lightbox_container_content_button_input"
                   type="text"

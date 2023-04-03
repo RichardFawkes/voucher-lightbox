@@ -77,6 +77,10 @@ body {
     margin-bottom: 0.6em;
     font-size: 0.8em;
   }
+
+  .lightbox_container_content_form {
+    text-align: end;
+  }
   .lightbox_container_content_sucess {
     position: absolute;
     width: 100%;
@@ -110,7 +114,6 @@ body {
   }
   .lightbox_container_content_button_send {
     text-transform: uppercase;
-    border-radius: 1em;
     border: 1px solid transparent;
     padding: 0.2em;
     font-size: 0.8em;
@@ -202,6 +205,9 @@ body {
     top: 67%;
     left: 68%;
     transform: translate(-50%, -50%);
+  }
+  .lightbox_container_content_form {
+    text-align: end;
   }
   .lightbox_container_content_sucess {
     position: absolute;
